@@ -6,9 +6,10 @@
   --main-title-color: #212121;
   --hero-title-white: #ffffff;
   --bcg-color-hero: #2f303a;
-  --bcg-color-hero-hover: #188ce8;
+  --btn-color: #2196f3;
+  --btn-color-hover: #188ce8;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --bcg-color-items: #f5f4fa;
+  --bcg-color-team: #f5f4fa;
   --bcg-color-primery: #ffffff;
   --bcg-color-team-card: #ffffff;
   --bcg-color-work-card: #ffffff;
@@ -244,14 +245,14 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
-  background-color: var(--color-accent);
+  background-color: var(--btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   transition: background-color 250ms var(--timing-function), transform 100ms var(--timing-function);
 }
 .btn:hover, .btn:focus {
-  background-color: var(--bcg-color-hero-hover);
+  background-color: var(--btn-color-hover);
 }
 .btn:active {
   transform: scale(0.9);
@@ -354,7 +355,7 @@ body {
 }
 
 .team {
-  background-color: var(--bcg-color-items);
+  background-color: var(--bcg-color-team);
 }
 
 .team__list {
