@@ -1,14 +1,11 @@
 .features__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .features__item {
-  width: 270px;
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  width: 100%;
 
   &::before {
     display: block;
@@ -19,6 +16,14 @@
     background-position: center;
     background-color: var(--bcg-color-features-icon);
     border-radius: 4px;
+  }
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -34,9 +39,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .features__text {

@@ -1,15 +1,15 @@
 .clients-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--clients-clr-icon);
   color: var(--clients-clr-icon);
@@ -28,6 +28,14 @@
 
   &:active {
     transform: scale(0.9);
+  }
+
+  @include tablet {
+    width: 226px;
+  }
+
+  @include desktop {
+    width: 170px;
   }
 }
 
