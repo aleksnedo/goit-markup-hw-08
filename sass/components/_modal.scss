@@ -49,7 +49,7 @@
 
   &:hover,
   &:focus {
-    fill: #2196f3;
+    fill: var(--color-accent);
   }
 
   &:active {

@@ -22,10 +22,6 @@
   @include desktop {
     width: calc((100% - 90px) / 4);
   }
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
 
 .team__content {

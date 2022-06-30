@@ -72,11 +72,72 @@
           </div>
         </nav>
       </div>
+
+      <!-- Mobile-menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu__top">
+            <button type="button" class="menu-toggle js-close-menu">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu__bottom">
+            <ul class="mobile-menu__contacts list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__socials list">
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
       <!-- HERO -->
-      <!-- <section class="hero hero__overlay">
+      <section class="hero hero__overlay">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения <br />для вашего бизнеса
@@ -85,7 +146,7 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- FEAUTERS -->
       <section class="section features">
         <div class="container">
@@ -163,12 +224,35 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item list">
-              <img
-                src="./images/face-1-460.jpg"
-                alt="Фотография"
-                width="450"
-                height="460"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/face-1-desk-1x.jpg 1x,
+                    ./images/face-1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-1-tab-1x.jpg 1x,
+                    ./images/face-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-1-mob-1x.jpg 1x,
+                    ./images/face-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/face-1-mob-1x.jpg"
+                  alt="Фотография"
+                  width="450"
+                />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -207,12 +291,34 @@
             </li>
 
             <li class="team__item list">
-              <img
-                src="./images/face-2.jpg"
-                alt="Фотография"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/face-2-desk-1x.jpg 1x,
+                    ./images/face-2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-2-tab-1x.jpg 1x,
+                    ./images/face-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-2-mob-1x.jpg 1x,
+                    ./images/face-2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/face-2-mob-1x.jpg"
+                  alt="Фотография"
+                  width="450"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -251,12 +357,34 @@
             </li>
 
             <li class="team__item list">
-              <img
-                src="./images/face-3.jpg"
-                alt="Фотография"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/face-3-desk-1x.jpg 1x,
+                    ./images/face-3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-3-tab-1x.jpg 1x,
+                    ./images/face-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-3-mob-1x.jpg 1x,
+                    ./images/face-3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/face-3-mob-1x.jpg"
+                  alt="Фотография"
+                  width="450"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -295,12 +423,34 @@
             </li>
 
             <li class="team__item list">
-              <img
-                src="./images/face-4.jpg"
-                alt="Фотография"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/face-4-desk-1x.jpg 1x,
+                    ./images/face-4-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-4-tab-1x.jpg 1x,
+                    ./images/face-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-4-mob-1x.jpg 1x,
+                    ./images/face-4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/face-4-mob-1x.jpg"
+                  alt="Фотография"
+                  width="450"
+                />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
@@ -497,59 +647,6 @@
         </div>
       </div>
     </footer> -->
-
-    <!-- Mobile-menu -->
-    <div class="menu-container container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-close-menu"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu__list list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link link current" href="./index.html"
-            >Студия</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="./portfolio.html"
-            >Портфолио</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="">Контакты</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-menu__contacts list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__tel link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobile-menu__socials list">
-        <li class="mobile-menu__socials-item">
-          <a class="mobile-menu__socials-link link" href="">Instagram</a>
-        </li>
-        <li class="mobile-menu__socials-item">
-          <a class="mobile-menu__socials-link link" href="">Twitter</a>
-        </li>
-        <li class="mobile-menu__socials-item">
-          <a class="mobile-menu__socials-link link" href="">Facebook</a>
-        </li>
-        <li class="mobile-menu__socials-item">
-          <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
 
     <script
       defer
