@@ -1,12 +1,9 @@
 .clients-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
-
-// .clients-item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .clients-link {
   width: 210px;
@@ -19,6 +16,10 @@
   justify-content: center;
   transition: color 250ms var(--timing-function),
     border 250ms var(--timing-function), transform 100ms var(--timing-function);
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 
   &:hover,
   &:focus {

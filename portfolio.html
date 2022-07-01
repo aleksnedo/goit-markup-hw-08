@@ -141,7 +141,7 @@
       <section class="section work">
         <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
-          <!-- ФИЛЬТР-КНОПКИ -->
+          <!-- Filters-Buttons -->
           <ul class="filters filters__work">
             <li class="filters__item list">
               <button class="filters__btn active" type="button">Все</button>
@@ -159,18 +159,41 @@
               <button class="filters__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <!-- СЕТКА -->
+          <!-- Grids -->
           <ul class="work__list">
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-1.jpg"
-                    alt="Сайт компании"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-1-1x.jpg 1x,
+                        ./images/portf-desk-1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-1-1x.jpg 1x,
+                        ./images/portf-tab-1-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-1-1x.jpg 1x,
+                        ./images/portf-mob-1-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-1-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -187,13 +210,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-2.jpg"
-                    alt="Баскетболисты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-2-1x.jpg 1x,
+                        ./images/portf-desk-2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-2-1x.jpg 1x,
+                        ./images/portf-tab-2-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-2-1x.jpg 1x,
+                        ./images/portf-mob-2-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-2-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -209,13 +254,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-3.jpg"
-                    alt="Логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-3-1x.jpg 1x,
+                        ./images/portf-desk-3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-3-1x.jpg 1x,
+                        ./images/portf-tab-3-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-3-1x.jpg 1x,
+                        ./images/portf-mob-3-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-3-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -231,13 +298,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-4-1x.jpg 1x,
+                        ./images/portf-desk-4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-4-1x.jpg 1x,
+                        ./images/portf-tab-4-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-4-1x.jpg 1x,
+                        ./images/portf-mob-4-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-4-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -253,13 +342,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-5.jpg"
-                    alt="Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-5-1x.jpg 1x,
+                        ./images/portf-desk-5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-5-1x.jpg 1x,
+                        ./images/portf-tab-5-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-5-1x.jpg 1x,
+                        ./images/portf-mob-5-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-5-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -275,13 +386,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-6.jpg"
-                    alt="Монитор с вэб-сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-6-1x.jpg 1x,
+                        ./images/portf-desk-6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-6-1x.jpg 1x,
+                        ./images/portf-tab-6-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-6-1x.jpg 1x,
+                        ./images/portf-mob-6-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-6-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -297,13 +430,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-7.jpg"
-                    alt="Дизайн журнала"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-7-1x.jpg 1x,
+                        ./images/portf-desk-7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-7-1x.jpg 1x,
+                        ./images/portf-tab-7-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-7-1x.jpg 1x,
+                        ./images/portf-mob-7-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-7-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -319,13 +474,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-8.jpg"
-                    alt="Рекламный логотип"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-8-1x.jpg 1x,
+                        ./images/portf-desk-8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-8-1x.jpg 1x,
+                        ./images/portf-tab-8-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-8-1x.jpg 1x,
+                        ./images/portf-mob-8-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-8-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -341,13 +518,35 @@
             <li class="work__item list">
               <a href="" class="work__link link">
                 <div class="work__top-wrap">
-                  <img
-                    class="work__picture"
-                    src="./images/portf-9.jpg"
-                    alt="Ноутбук с приложением"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portf-desk-9-1x.jpg 1x,
+                        ./images/portf-desk-9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-tab-9-1x.jpg 1x,
+                        ./images/portf-tab-9-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portf-mob-9-1x.jpg 1x,
+                        ./images/portf-mob-9-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="work__picture"
+                      src="./images/portf-mob-9-1x.jpg"
+                      alt="Сайт компании"
+                      width="450"
+                    />
+                  </picture>
                   <p class="work__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -365,9 +564,9 @@
       </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__main">
-        <div>
+        <div class="footer__top-wrap">
           <a class="logo logo--light footer__logo link" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
@@ -469,7 +668,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script
       defer

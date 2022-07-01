@@ -7,24 +7,46 @@
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
+
+  @include desktop {
+    text-align: initial;
+  }
 }
 
-.footer__main {
-  display: flex;
-  align-items: baseline;
+@include tablet {
+  .footer__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
+@include desktop {
+  .footer__main {
+    flex-wrap: nowrap;
+    justify-content: initial;
+    align-items: baseline;
+  }
+}
 .address {
-  width: 231px;
-  height: 81px;
+  text-align: center;
+  margin-bottom: 60px;
+  @include desktop {
+    text-align: initial;
+    margin-bottom: 0;
+  }
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 
 .address__map-link {
-  position: relative;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -38,7 +60,6 @@
 }
 
 .address__contacts {
-  position: relative;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -52,13 +73,14 @@
 }
 
 .socials__footer {
-  width: 206px;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-left: 165px;
+  }
+  @include desktop {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .socials__footer-title {
@@ -69,11 +91,17 @@
   text-transform: uppercase;
   color: var(--third-text-color);
   margin-bottom: 20px;
-  margin-right: auto;
+  text-align: center;
+
+  @include desktop {
+    text-align: initial;
+  }
 }
 
-.subscribe {
-  margin-left: 93px;
+@include desktop {
+  .subscribe {
+    margin-left: 93px;
+  }
 }
 
 .subscribe__title {
@@ -82,17 +110,25 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--third-text-color);
   margin-bottom: 20px;
+  @include desktop {
+    text-align: initial;
+  }
 }
 
 .subscribe__field {
-  display: flex;
+  text-align: center;
+  @include desktop {
+    display: flex;
+    text-align: initial;
+  }
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -104,10 +140,22 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+  display: block;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @include desktop {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
-.subscribe__btn {
-  margin-left: 12px;
+@include desktop {
+  .subscribe__btn {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__btn-icon {
