@@ -1279,7 +1279,8 @@ body {
     padding-bottom: 63px;
   }
 }
-.work__link:hover .work__description, .work__link:focus .work__description {
+.work__link:hover .work__description, .work__link:focus .work__description,
+.work__description .work__link:active {
   transform: translateY(0);
 }
 
