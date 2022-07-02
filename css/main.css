@@ -356,7 +356,17 @@ body {
 .mobile-menu__socials {
   display: flex;
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu__socials {
+    flex-wrap: wrap;
+  }
+}
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__socials-item:nth-child(-n+3) {
+    margin-bottom: 10px;
+  }
+}
 .mobile-menu__socials-item:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
@@ -1090,9 +1100,7 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   user-select: none;
 }
 @media screen and (min-width: 1200px) {
@@ -1103,9 +1111,8 @@ body {
 }
 .modal__check-text::before {
   content: "";
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
   width: 15px;
   height: 16px;
   border: 2px solid #212121;
@@ -1124,8 +1131,13 @@ body {
 }
 
 .modal__privacy-link {
-  margin-left: 5px;
+  color: var(--primery-text-color);
+  cursor: default;
+}
+.modal__privacy-link span {
   color: var(--color-accent);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .modal__btn-wrap {
