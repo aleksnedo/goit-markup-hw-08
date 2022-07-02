@@ -301,10 +301,6 @@ body {
   outline: none;
   display: block;
   margin-left: auto;
-  position: relative;
-}
-.menu-toggle svg {
-  position: static;
 }
 .menu-toggle:hover, .menu-toggle:focus {
   fill: var(--color-accent);
