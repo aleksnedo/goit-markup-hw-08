@@ -1000,6 +1000,10 @@ body {
   transform: scale(0.9);
 }
 
+.modal__close-icon {
+  position: absolute;
+}
+
 .modal__title {
   font-style: normal;
   font-weight: 700;
