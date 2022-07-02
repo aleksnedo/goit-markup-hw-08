@@ -301,6 +301,10 @@ body {
   outline: none;
   display: block;
   margin-left: auto;
+  position: relative;
+}
+.menu-toggle svg {
+  position: static;
 }
 .menu-toggle:hover, .menu-toggle:focus {
   fill: var(--color-accent);
@@ -1279,8 +1283,7 @@ body {
     padding-bottom: 63px;
   }
 }
-.work__link:hover .work__description, .work__link:focus .work__description,
-.work__description .work__link:active {
+.work__link:hover .work__description, .work__link:focus .work__description {
   transform: translateY(0);
 }
 
