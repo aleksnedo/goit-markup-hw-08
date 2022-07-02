@@ -1130,14 +1130,11 @@ body {
   border-color: var(--color-accent);
 }
 
-.modal__privacy-link {
+.modal__privacy-text {
   color: var(--primery-text-color);
-  cursor: default;
 }
-.modal__privacy-link span {
+.modal__privacy-text .modal__privacy-link {
   color: var(--color-accent);
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .modal__btn-wrap {
@@ -1258,6 +1255,14 @@ body {
   background-color: var(--bcg-color-work-desc);
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
+}
+@media screen and (max-width: 479px) {
+  .work__description {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 4.65vw;
+    line-height: 1.56;
+  }
 }
 @media screen and (min-width: 768px) {
   .work__description {

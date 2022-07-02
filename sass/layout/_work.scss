@@ -59,6 +59,13 @@
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
 
+  @media screen and (max-width: 479px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 4.65vw;
+    line-height: 1.56;
+  }
+
   @include tablet {
     padding-top: 49px;
   }

@@ -170,8 +170,6 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   display: inline-block;
-  // align-items: center;
-  // justify-content: center;
   user-select: none;
 
   @include desktop {
@@ -183,8 +181,6 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    // align-items: center;
-    // justify-content: center;
     width: 15px;
     height: 16px;
     border: 2px solid #212121;
@@ -205,13 +201,10 @@
   }
 }
 
-.modal__privacy-link {
+.modal__privacy-text {
   color: var(--primery-text-color);
-  cursor: default;
-  span {
+  .modal__privacy-link {
     color: var(--color-accent);
-    text-decoration: underline;
-    cursor: pointer;
   }
 }
 
