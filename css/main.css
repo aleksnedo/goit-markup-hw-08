@@ -734,7 +734,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .clients-link {
-    width: 100%;
+    width: 170px;
   }
 }
 .clients-link:hover, .clients-link:focus {

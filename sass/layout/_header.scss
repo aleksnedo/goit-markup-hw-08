@@ -96,11 +96,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  // display: flex;
-  // margin-left: 305px;
-  // .nav__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+
   .nav__item:not(:last-child) {
     margin-bottom: 10px;
     @include desktop {
