@@ -721,6 +721,14 @@ body {
   gap: 30px;
 }
 
+@media screen and (max-width: 479px) {
+  .clients-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .clients-link {
   width: 210px;
   height: 92px;
@@ -731,11 +739,6 @@ body {
   align-items: center;
   justify-content: center;
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function), transform 100ms var(--timing-function);
-}
-@media screen and (max-width: 479px) {
-  .clients-link {
-    width: 170px;
-  }
 }
 .clients-link:hover, .clients-link:focus {
   border: 1px solid var(--clients-clr-hover);
